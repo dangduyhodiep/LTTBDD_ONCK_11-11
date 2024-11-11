@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './components/Screen01'; // Đường dẫn tới HomeScreen
 import Screen02 from './components/Screen02'; // Đường dẫn tới HomeScreen
+import Screen02_API from './components/Screen02_API'; // Đường dẫn tới HomeScreen
 import Screen03 from './components/Screen03'; // Đường dẫn tới HomeScreen
 
 
@@ -14,6 +15,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Screen01">
         <Stack.Screen name="HomeScreen" component={HomeScreen}/>
         <Stack.Screen name="Screen02" component={Screen02}/>
+        // <Stack.Screen name="Screen02_API" component={Screen02_API}/>
         <Stack.Screen name="Screen03" component={Screen03}/>
       </Stack.Navigator>
     </NavigationContainer>
